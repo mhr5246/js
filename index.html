@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>nohed</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body id="background">
+    <div class="container-fluid" style="padding: 0px; min-width: 360px; max-width: 1366;">
+        <div id="LRPadding" class="container">
+            <div class="row no-gutters justify-content-center align-items-center">
+                <div class="col-auto col-sm-4 col-md-5 col-lg-3 col-xl-3">
+                    <img class="img-fluid" src="assets/img/nohed%20Logo.png" alt="nohed logo" loading="lazy" />
+                </div>
+            </div>
+            <div class="row no-gutters justify-content-center">
+                <div class="col-md-6 align-self-center" id="div_col_video">
+                    <div
+                        class="row no-gutters justify-content-center align-items-center embed-responsive embed-responsive-16by9">
+                        <div class="col align-self-center embed-responsive-item">
+                            <video poster="./assets/img/poster-video-mobile.jpg" class="bounce animated"  preload="none" id="video" data-title="The Video Title">
+                                 <!-- onpause="sendEvent('Pause', this)" onplay="sendEvent('Play', this)" onended="sendEvent('Ended', this)" -->
+                                <source
+                                    src="https://hw6.cdn.asset.aparat.com/aparat-video/f466fc3e8de8834ac7c055d2201315aa21926826-360p.mp4"
+                                    type="video/mp4" />
+                                    مرورگر شما این ویدیو را پشتیبانی نمیدهد
+                            </video>
+							<div class="playpause"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col jello animated" id="div_forms" style="background-color: #007770; padding: 20px;">
+                    <p class="lead text-center border rounded" style="color: rgb(255, 255, 255);">
+                        <strong>دریافت نسخه موبایلی بازی جنگی و آنلاین ایرانی</strong><br />
+                    </p>
+                    <div class="text-center text-white" id="showmessage"></div>
+                    <!-- بخش سوم -->
+                    <div class="text-center" id="div_form_end" style="display: none;">
+                        <p class="lead text-center border rounded border-primary shadow-sm"
+                            style="background-color: #ffffff;">
+                            تبریک شما با موفقیت عضو بازی نوحد شدید<br />
+                            شما میتوانید بازی را از لینک زیر دانلود کنید
+                        </p>
+
+                        
+                        <button class="btn btn-primary btn-block btn-lg border rounded" id="button_donwnload" type="button">
+                            دانلود مستقیم 
+                        </button>
+                    </div>
+                    <!-- بخش دوم -->
+                    <div class="text-center" id="div_form_otp" style="display: none;">
+                        <p class="lead text-center border rounded border-primary shadow-sm"
+                            style="background-color: #ffffff;">
+                        دریافت کد 
+                            <br/>
+                        </p>
+
+                        <input
+                            class="border rounded shadow-sm form-control form-control-lg d-xl-flex justify-content-xl-center align-items-xl-center"
+                            type="number" id="input_otp" autofocus inputmode="numeric" required maxlength="4"
+                            minlength="3" name="otp" placeholder="کد 4 رقمی رو وارد کن" />
+                        <button class="btn btn-primary btn-block btn-lg border rounded" id="submit_otp" type="submit">
+                            تایید
+                        </button>
+                    </div>
+                    <!-- یخش اول -->
+
+                    <div class="text-center" id="div_form">
+                        <p class="lead text-center border rounded border-primary shadow-sm"
+                            style="background-color: #ffffff;">
+                            عضویت در اپلیکیشن نوهد با تعرفه روزانه پانصد تومان<br />
+                        </p>
+                        <!-- <form action="" name="myform"></form> -->
+                        <form action="javascript:void(0);" id="form_mobile_number">
+                            <input
+                                class="border rounded shadow-sm form-control form-control-lg d-xl-flex justify-content-xl-center align-items-xl-center"
+                                type="tel" id="input_mobile" autofocus autocomplete="on" inputmode="tel" required
+                                maxlength="11" minlength="10" name="mobile" placeholder="شماره همراه اولی تو وارد کن" />
+                            <button class="btn btn-primary btn-block btn-lg border rounded" id="submit" type="submit">
+                                تایید
+                            </button>
+                         </form>
+                        <button class="btn btn-light btn-sm" type="button" data-toggle="modal"
+                            data-target="#sharayet_modal_id">
+                            شرایط سرویس
+                        </button>
+                        <div class="modal fade" role="dialog" tabindex="-1" id="sharayet_modal_id"
+                            aria-labelledby="sharayet_modal">
+                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">شرایط سرویس</h4>
+                                        <button id="submit" type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">X</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body" style="direction: rtl;">
+                                        <p class="text-justify">
+                                            <br />نوهد یک بازی موبایلی برگرفته از رشادت‌های تکاوران
+                                            تیپ65 نیروی ویژه هوابرد در سبک تیراندازی اول شخص می
+                                            باشد. کاربر به عنوان یکی از تکاوران تیپ ۶۵ نیروی ویژه
+                                            هوابرد به نبرد با دشمنان میرود &nbsp;و با کشتن دشمنان در
+                                            یک رقابت با موج های با سختیِ متفاوت و نفس گیر می تواند
+                                            گروگان های ایرانی را آزاد کند و در لیدربرد آنلاین بازی
+                                            با دیگر تکاوران نوهد به رقابت بپردازد.<br />شرکت رسانه
+                                            پردازان خلاق به عنوان یکی از موفق‌ترین شرکت‌های تولید
+                                            کننده محتوا در حوزه خدمات ارزش افزوده قصد دارد تا با
+                                            بهره‌گیری از تجربه خود در ارایه محصولات فرهنگی، با بازی
+                                            نوهد به اشاعه فرهنگ رشادت و دلاوری در بین جوانان ایرانی
+                                            بپردازد. چنانچه کاربران اپلیکیشن مشکلی در سرویس مربوطه
+                                            داشته باشند می‌توانند با شماره 021-86085978 یا با پست
+                                            الکترونیکی support@kmedia.irدر ارتباط باشند. هزینه سرویس
+                                            برای مشترکین دائمی روی قبض اعمال می‌گردد و در مشترکین
+                                            اعتباری از شارژ سیم‌کارت کسر می‌شود.بستن<br /><br /><br />
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-light bg-success" type="button" data-dismiss="modal">
+                                            پذیرفتن و بستن
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.ajax-cross-origin.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+
+</body>
+
+</html>

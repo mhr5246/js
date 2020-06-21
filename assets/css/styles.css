@@ -1,0 +1,35 @@
+#background {
+  background-image: url(../../assets/img//background-pattern.jpg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat;
+  /*padding: 0px;*/
+  /*min-width: 360px;*/
+  /*height: 100%;*/
+  /*min-height: 653px;*/
+  direction: rtl;
+}
+
+#input_mobile {
+  font-size: 18px;
+  text-align: center;
+}
+
+#submit {
+  margin: 3px;
+}
+
+.playpause {
+  background-image: url(../img/playYT.svg);
+  background-repeat: no-repeat;
+  width: 25%;
+  height: 25%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: contain;
+  background-position: center
+}
