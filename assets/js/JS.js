@@ -1,4 +1,6 @@
 
+$serverUrl      =   'XXX';
+$authKey        =   "XXXX";
 
 $action         =   "setmsisdn";
 $action_otp     =   "setmsisdnvalidcode";
