@@ -1,6 +1,4 @@
 
-$serverUrl      =   '185.12.102.41';
-$authKey        =   "727c4530fd784438a59f9b20881ad865";
 
 $action         =   "setmsisdn";
 $action_otp     =   "setmsisdnvalidcode";
